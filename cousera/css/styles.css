@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #282626;
+  }
+  
+  /* Header Styles */
+  header {
+    background-color: #2c4359;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  header h1 {
+    font-family: 'Georgia', serif;
+    font-size: 36px;
+    margin: 0;
+  }
+  
+  header p {
+    font-size: 18px;
+    margin-top: 10px;
+    font-style: italic;
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #223548;
+    padding: 15px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    width: 20%;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: #c86c1b;
+  }
+  
+  /* Main Content Styles */
+  main {
+    background-color: #ffffff;
+    font-size: 18px;
+    padding: 40px 20px;
+  }
+  
+  main h1 {
+    text-align: center;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+  
+  /* Book List Styles */
+  .book-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .book-item {
+    background-color: #ecf0f1;
+    width: 23%; /* Thay đổi width để căn chỉnh tốt hơn */
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ để tạo hiệu ứng sâu */
+  }
+  
+  .book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .book-item h2 {
+    color: #273746;
+    font-size: 20px;
+    margin: 15px 0 10px;
+  }
+  
+  .book-item p {
+    font-size: 16px;
+    color: #7f8c8d;
+  }
+  
+  .book-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng bóng đổ khi hover */
+  }
+  
+  /* Footer Styles */
+  footer {
+    background-color: #34495e;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* List Item Styles */
+  li {
+    display: inline-block;
+    width: 20%; /* Giữ width của li */
+  }
+  
+  /* Paragraph Styles */
+  p {
+    line-height: 1.6;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    nav ul li {
+      width: 50%; /* Khi màn hình nhỏ, nav sẽ hiển thị 2 mục trên 1 hàng */
+    }
+  
+    .book-item {
+      width: 48%; /* Khi màn hình nhỏ, mỗi book-item sẽ chiếm 48% để có khoảng cách */
+    }
+  
+    header h1 {
+      font-size: 28px; /* Giảm kích thước h1 trên màn hình nhỏ */
+    }
+  
+    main h1 {
+      font-size: 28px; /* Giảm kích thước main h1 trên màn hình nhỏ */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    nav ul li {
+      width: 100%; /* Khi màn hình rất nhỏ, các item trong nav sẽ chiếm toàn bộ chiều rộng */
+    }
+  
+    .book-item {
+      width: 100%; /* Khi màn hình nhỏ hơn 480px, book-item sẽ chiếm toàn bộ chiều rộng */
+    }
+  }
+  
